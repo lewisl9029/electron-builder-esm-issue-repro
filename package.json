@@ -1,0 +1,19 @@
+{
+  "name": "electron-builder-esm-issue-repro",
+  "version": "1.0.0",
+  "main": "main.cjs",
+  "license": "MIT",
+  "private": true,
+  "author": "Lewis Liu",
+  "description": "Repro for electron app not starting up when using esm workaround",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "package": "rimraf packages && electron-builder --config electronBuilderConfig.cjs"
+  },
+  "devDependencies": {
+    "electron": "15.1.2",
+    "electron-builder": "^22.13.1",
+    "rimraf": "^3.0.2"
+  }
+}
